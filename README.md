@@ -69,10 +69,12 @@ For guidance on how to use LCSH, see [https://www.loc.gov/catworkshop/lcsh/](htt
 **Examples**:
 
 Names
+
     Elder, William
     Moseley, Nathaniel R.
 
 Topics
+
     Women medical students
     Women--Education (Higher)
     Female Medical College of Pennsylvania--Students
