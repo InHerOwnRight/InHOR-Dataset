@@ -1,4 +1,7 @@
-# InHOR Dataset
+# In Her Own Right Dataset
+
+The In Her Own Right dataset consists of all item-level records aggregated by the project, currently 13,295.
+
 
 ## Metadata schema
 
