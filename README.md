@@ -52,6 +52,8 @@ The In Her Own Right dataset consists of all item-level records aggregated by th
 ## **header - identifier**
 
 
+
+
 ## **dc:identifier**
 
 **Definition:** An unambiguous reference to the resource within a given context. 
@@ -87,6 +89,8 @@ The In Her Own Right dataset consists of all item-level records aggregated by th
    </td>
   </tr>
 </table>
+
+
 
 
 
@@ -128,6 +132,8 @@ The In Her Own Right dataset consists of all item-level records aggregated by th
    </td>
   </tr>
 </table>
+
+
 
 
 
