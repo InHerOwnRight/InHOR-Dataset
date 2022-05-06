@@ -10,119 +10,52 @@ The In Her Own Right dataset consists of all item-level records aggregated by th
 
 [header - identifier](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#header---identifier)
 
-[dc:subject](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcsubject)
-
 [dc:identifier](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcidentifier)
 
-[dc:type](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctype)
+[Local Identifier*]
+
+[Contributing Institution*]
+
+[Record URL*]
 
 [dc:title](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctitle)
 
 [dc:creator](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dccreator)
 
-[dc:rights](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcrights)
-
-[dc:language](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dclanguage)
+[dc:subject](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcsubject)
 
 [dc:date](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcdate)
 
+[dc:type](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctype)
+
+[dc:language](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dclanguage)
+
 [dc:description](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcdescription)
 
-[dc:relation](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcrelation)
-
-[dcterms:spatial](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctermsspatial)
+[dcterms:spatial*](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctermsspatial)
 
 [dcterms:extent](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctermsextent)
 
-[dcterms:isPartOf](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctermsispartof)
-
 [dc:contributor](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dccontributor)
-
-[dc:coverage](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dccoverage)
 
 [dc:publisher](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcpublisher)
 
+[dcterms:isPartOf*](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctermsispartof)
+
+[dc:rights](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcrights)
+
 [header - datestamp](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#header---datestamp)
 
-[full text](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#full-text)
 
 
 ## **header - identifier**
-
-
-## **dc:subject**
-
-**Definition:** The topic(s) of the resource.
-
-**Repeatable:** Yes
-
-**Required:** Yes. At least one subject is required. InHOR recommends three subjects, use more as needed.
-
-**Application:** Typically, the subject will be represented using keywords, names, or key phrases. Generally, in considering level of description, adopt this approach: if search results brought a user to the record, would they be disappointed? InHOR recommends the following sources for subjects:
-
-* [http://inherownright.org](http://inherownright.org) - another contributing repository might have already used a subject(s) that applies to the resource.
-* FAST subject headings - a simplified version of LCSH that is easier to understand, control, apply, and use.
-* Other controlled vocabularies - LCSH, AAT, LCNAF, VIAF, etc.
-* Pre-selected authorized subject terms and names, compiled and recommended for use in the pilot project’s metadata enhancement event: [InHOR subject terms and names](https://docs.google.com/spreadsheets/d/1oYAhOLWHZlqjF21Ofn2a_Dx3zG50YukpqEdlt48ZJa8/edit) _(note existence of multiple tabs)_. 
-
-If the subject is a person, family, or corporate entity and the subject is not found in the above sources, create a local form by following the guidelines in [Appendix A - Creating local names for “Creator” or "Subject" fields](https://docs.google.com/document/d/1RLbwdUrgIH-3YeZwhCxYSC5c4ll8q6-0_N99VwgpjEU/edit#bookmark=id.pia1rbqs3ly4).
-
-For guidance on how to use LCSH, see [https://www.loc.gov/catworkshop/lcsh/](https://www.loc.gov/catworkshop/lcsh/).
-
-**Examples**:
-
-Names
-
-    Elder, William
-    Moseley, Nathaniel R.
-
-Topics
-
-    Women medical students
-    Women--Education (Higher)
-    Female Medical College of Pennsylvania--Students
-
-**Mappings:**
-
-
-<table>
-  <tr>
-   <td>Simple Dublin Core
-   </td>
-   <td>CONTENTDM
-   </td>
-   <td>MODS
-   </td>
-  </tr>
-  <tr>
-   <td>dc:subject
-   </td>
-   <td>Subject
-   </td>
-   <td>&lt;subject>
-<p>
-    &lt;topic>
-<p>
-    &lt;name>
-<p>
-    &lt;occupation>
-<p>
-    &lt;geographic>
-<p>
-    &lt;temporal>
-<p>
-    &lt;titleInfo>
-   </td>
-  </tr>
-</table>
-
 
 
 ## **dc:identifier**
 
 **Definition:** An unambiguous reference to the resource within a given context. 
 
-**Repeatable:** No
+**Repeatable:** Yes
 
 **Required:** Yes
 
@@ -150,48 +83,6 @@ Topics
    <td>Identifier
    </td>
    <td>&lt;identifier>
-   </td>
-  </tr>
-</table>
-
-
-
-## **dc:type**
-
-**Definition:** The nature or genre of the resource.
-
-**Repeatable:** Yes
-
-**Required:** Strongly recommended
-
-**Application:** In order to map this field to InHOR, the value(s) for this element must be taken from the following list of high-level types:
-
-* text
-* image
-* physical object
-* sound
-* moving image
-
-This is a requirement from DPLA, which we are following to keep our data DPLA-ready. You may choose to use other values in your system, but if so, you must un-map the DC fields in the OAI export. InHOR recommends putting more specific genres (i.e. “scrapbooks” or “journals”) in the subject field. 
-
-**Mappings:**
-
-
-<table>
-  <tr>
-   <td>Simple Dublin Core
-   </td>
-   <td>CONTENTDM
-   </td>
-   <td>MODS
-   </td>
-  </tr>
-  <tr>
-   <td>dc:type
-   </td>
-   <td>Type
-   </td>
-   <td>&lt;typeOfResource>
    </td>
   </tr>
 </table>
@@ -287,65 +178,37 @@ If the creator is not found in the above sources, create a local form by followi
 
 
 
-## **dc:rights**
+## **dc:subject**
 
-**Definition:** Information about copyright or other restrictions on the use of the resource.
-
-**Repeatable**: Yes
-
-**Required:** Yes
-
-**Application:** State clearly and concisely what uses are allowed and not allowed for the items in your collection. InHOR recommends selecting one of the standardized statements at [RightsStatements.org](http://rightsstatements.org/en/). Choose the statement that is most precise and permissive allowable for the materials in question. ([Creative Commons licenses](https://creativecommons.org/) are another good choice, although they are technically intended for licensing by creators, not but cultural heritage institutions.)
-
-If your institution doesn’t have a specific practice and RightsStatements.org doesn’t suit, consider adopting the following blanket statement, using language from CLIR’s Intellectual Property (IP) Agreement. 
-
-        Rights assessment is your responsibility. This material is made available for noncommercial educational, scholarly, and/or charitable purposes. For other uses or for more information, please contact [the repository, + contact info].
-
-**Examples:** InHOR recommends using the following statements, listed in order of preference, as applicable.
-
-        This work is believed to be in the Public Domain under the laws of the United States. For more information, see [http://rightsstatements.org/page/NoC-US/1.0/](http://rightsstatements.org/page/NoC-US/1.0/?language=en)
-        
-        This work is not in copyright, but commercial uses of this digital representation are limited. For more information, contact [the repository + contact info] and see [http://rightsstatements.org/page/NoC-NC/1.0/](http://rightsstatements.org/page/NoC-NC/1.0/)
-        
-        Rights assessment is your responsibility. This material is made available for noncommercial educational, scholarly, and/or charitable purposes. For other uses or for more information, please contact [the repository, + contact info].
-
-**Mappings:**
-
-
-<table>
-  <tr>
-   <td>Simple Dublin Core
-   </td>
-   <td>CONTENTDM
-   </td>
-   <td>MODS
-   </td>
-  </tr>
-  <tr>
-   <td>dc:rights
-   </td>
-   <td>Rights-License
-   </td>
-   <td>&lt;accessCondition>
-   </td>
-  </tr>
-</table>
-
-
-
-## **dc:language**
-
-**Definition:** The language of the resource.
+**Definition:** The topic(s) of the resource.
 
 **Repeatable:** Yes
 
-**Required:** Yes, for textual resources 
+**Required:** Yes. At least one subject is required. InHOR recommends three subjects, use more as needed.
 
-**Application:** InHOR strongly recommends that the value for this element be the 3-letter code from [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data). If using [ISO 639-2](https://www.loc.gov/standards/iso639-2/php/code_list.php), given the choice between a terminology (T) code, and a bibliographic code (B), InHOR strongly recommends using the terminology code.
+**Application:** Typically, the subject will be represented using keywords, names, or key phrases. Generally, in considering level of description, adopt this approach: if search results brought a user to the record, would they be disappointed? InHOR recommends the following sources for subjects:
 
-**Examples:**
+* [http://inherownright.org](http://inherownright.org) - another contributing repository might have already used a subject(s) that applies to the resource.
+* FAST subject headings - a simplified version of LCSH that is easier to understand, control, apply, and use.
+* Other controlled vocabularies - LCSH, AAT, LCNAF, VIAF, etc.
+* Pre-selected authorized subject terms and names, compiled and recommended for use in the pilot project’s metadata enhancement event: [InHOR subject terms and names](https://docs.google.com/spreadsheets/d/1oYAhOLWHZlqjF21Ofn2a_Dx3zG50YukpqEdlt48ZJa8/edit) _(note existence of multiple tabs)_. 
 
-    eng; spa; deu
+If the subject is a person, family, or corporate entity and the subject is not found in the above sources, create a local form by following the guidelines in [Appendix A - Creating local names for “Creator” or "Subject" fields](https://docs.google.com/document/d/1RLbwdUrgIH-3YeZwhCxYSC5c4ll8q6-0_N99VwgpjEU/edit#bookmark=id.pia1rbqs3ly4).
+
+For guidance on how to use LCSH, see [https://www.loc.gov/catworkshop/lcsh/](https://www.loc.gov/catworkshop/lcsh/).
+
+**Examples**:
+
+Names
+
+    Elder, William
+    Moseley, Nathaniel R.
+
+Topics
+
+    Women medical students
+    Women--Education (Higher)
+    Female Medical College of Pennsylvania--Students
 
 **Mappings:**
 
@@ -360,11 +223,23 @@ If your institution doesn’t have a specific practice and RightsStatements.org 
    </td>
   </tr>
   <tr>
-   <td>dc:language
+   <td>dc:subject
    </td>
-   <td>Language
+   <td>Subject
    </td>
-   <td>&lt;language>&lt;languageTerm>
+   <td>&lt;subject>
+<p>
+    &lt;topic>
+<p>
+    &lt;name>
+<p>
+    &lt;occupation>
+<p>
+    &lt;geographic>
+<p>
+    &lt;temporal>
+<p>
+    &lt;titleInfo>
    </td>
   </tr>
 </table>
@@ -425,6 +300,86 @@ For more examples see [https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/T
 
 
 
+## **dc:type**
+
+**Definition:** The nature or genre of the resource.
+
+**Repeatable:** Yes
+
+**Required:** Strongly recommended
+
+**Application:** In order to map this field to InHOR, the value(s) for this element must be taken from the following list of high-level types:
+
+* text
+* image
+* physical object
+* sound
+* moving image
+
+This is a requirement from DPLA, which we are following to keep our data DPLA-ready. You may choose to use other values in your system, but if so, you must un-map the DC fields in the OAI export. InHOR recommends putting more specific genres (i.e. “scrapbooks” or “journals”) in the subject field. 
+
+**Mappings:**
+
+
+<table>
+  <tr>
+   <td>Simple Dublin Core
+   </td>
+   <td>CONTENTDM
+   </td>
+   <td>MODS
+   </td>
+  </tr>
+  <tr>
+   <td>dc:type
+   </td>
+   <td>Type
+   </td>
+   <td>&lt;typeOfResource>
+   </td>
+  </tr>
+</table>
+
+
+
+## **dc:language**
+
+**Definition:** The language of the resource.
+
+**Repeatable:** Yes
+
+**Required:** Yes, for textual resources 
+
+**Application:** InHOR strongly recommends that the value for this element be the 3-letter code from [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data). If using [ISO 639-2](https://www.loc.gov/standards/iso639-2/php/code_list.php), given the choice between a terminology (T) code, and a bibliographic code (B), InHOR strongly recommends using the terminology code.
+
+**Examples:**
+
+    eng; spa; deu
+
+**Mappings:**
+
+
+<table>
+  <tr>
+   <td>Simple Dublin Core
+   </td>
+   <td>CONTENTDM
+   </td>
+   <td>MODS
+   </td>
+  </tr>
+  <tr>
+   <td>dc:language
+   </td>
+   <td>Language
+   </td>
+   <td>&lt;language>&lt;languageTerm>
+   </td>
+  </tr>
+</table>
+
+
+
 ## **dc:description**
 
 **Definition:** A free text account of the resource.
@@ -467,9 +422,6 @@ Note that if you are contributing via OAI-PMH, transcriptions will appear on the
   </tr>
 </table>
 
-
-
-## **dc:relation**
 
 
 ## **dcterms:spatial**
@@ -579,49 +531,7 @@ Locally constructed term with more granularity
 
 
 
-## **dcterms:isPartOf**
-
-**Definition:** Formal title of the full physical collection to which the resource belongs. If you wish to provide additional information (e.g. finding aid URL or series or box information), you may choose to use other values in your system, but if so, you must un-map the DC fields in the OAI export.
-
-**Repeatable: _To be determined._**
-
-**Required:** Optional
-
-**Application:** This field does not currently display but future plans for the site include the ability to click on a collection and see all the content from that collection that is included in the InHOR site. 
-
-**Examples:**
-
-    Ann Preston papers, Acc-029
-    Cope Evans papers
-
-**Mappings:**
-
-
-<table>
-  <tr>
-   <td>Simple Dublin Core
-   </td>
-   <td>CONTENTDM
-   </td>
-   <td>MODS
-   </td>
-  </tr>
-  <tr>
-   <td>dc:source or dc:relation
-   </td>
-   <td>Source
-   </td>
-   <td>&lt;relatedItem>
-   </td>
-  </tr>
-</table>
-
-
-
 ## **dc:contributor**
-
-
-## **dc:coverage**
 
 
 ## **dc:publisher**
@@ -664,9 +574,97 @@ Locally constructed term with more granularity
 
 
 
+## **dcterms:isPartOf**
+
+**Definition:** Formal title of the full physical collection to which the resource belongs. If you wish to provide additional information (e.g. finding aid URL or series or box information), you may choose to use other values in your system, but if so, you must un-map the DC fields in the OAI export.
+
+**Repeatable:** Yes
+
+**Required:** Optional
+
+**Application:** The database maps this field so that the user can click on a collection and see all the content from that collection that is included in the InHOR site. 
+
+**Examples:**
+
+    Ann Preston papers, Acc-029
+    Cope Evans papers
+
+**Mappings:**
+
+
+<table>
+  <tr>
+   <td>Simple Dublin Core
+   </td>
+   <td>CONTENTDM
+   </td>
+   <td>MODS
+   </td>
+  </tr>
+  <tr>
+   <td>dc:source or dc:relation
+   </td>
+   <td>Source
+   </td>
+   <td>&lt;relatedItem>
+   </td>
+  </tr>
+</table>
+
+
+
+## **dc:rights**
+
+**Definition:** Information about copyright or other restrictions on the use of the resource.
+
+**Repeatable**: Yes
+
+**Required:** Yes
+
+**Application:** State clearly and concisely what uses are allowed and not allowed for the items in your collection. InHOR recommends selecting one of the standardized statements at [RightsStatements.org](http://rightsstatements.org/en/). Choose the statement that is most precise and permissive allowable for the materials in question. ([Creative Commons licenses](https://creativecommons.org/) are another good choice, although they are technically intended for licensing by creators, not but cultural heritage institutions.)
+
+If your institution doesn’t have a specific practice and RightsStatements.org doesn’t suit, consider adopting the following blanket statement, using language from CLIR’s Intellectual Property (IP) Agreement. 
+
+        Rights assessment is your responsibility. This material is made available for noncommercial educational, scholarly, and/or charitable purposes. For other uses or for more information, please contact [the repository, + contact info].
+
+**Examples:** InHOR recommends using the following statements, listed in order of preference, as applicable.
+
+        This work is believed to be in the Public Domain under the laws of the United States. For more information, see [http://rightsstatements.org/page/NoC-US/1.0/](http://rightsstatements.org/page/NoC-US/1.0/?language=en)
+        
+        This work is not in copyright, but commercial uses of this digital representation are limited. For more information, contact [the repository + contact info] and see [http://rightsstatements.org/page/NoC-NC/1.0/](http://rightsstatements.org/page/NoC-NC/1.0/)
+        
+        Rights assessment is your responsibility. This material is made available for noncommercial educational, scholarly, and/or charitable purposes. For other uses or for more information, please contact [the repository, + contact info].
+
+**Mappings:**
+
+
+<table>
+  <tr>
+   <td>Simple Dublin Core
+   </td>
+   <td>CONTENTDM
+   </td>
+   <td>MODS
+   </td>
+  </tr>
+  <tr>
+   <td>dc:rights
+   </td>
+   <td>Rights-License
+   </td>
+   <td>&lt;accessCondition>
+   </td>
+  </tr>
+</table>
+
+
+
 ## **header - datestamp**
 
+
+
 ## **full text**
+[NOT A SEPARATE FIELD - MAPS TO dc:description]
 
 **Definition:** Transcription or OCR text.
 
@@ -682,6 +680,9 @@ All contributors: Object-level transcripts will be labeled on the aggregator sit
 
 All transcripts will be full text searchable. For transcription, InHOR recommends following the guidelines in [Appendix B](https://docs.google.com/document/d/1RLbwdUrgIH-3YeZwhCxYSC5c4ll8q6-0_N99VwgpjEU/edit#heading=h.ju9jbpcpit5c). 
 
+## **Removed from curated tabular dataset:**
+[dc:relation](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcrelation)
+[dc:coverage](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dccoverage)
 
 ## **Acronyms and abbreviations used in these guidelines**
 **AAT** - Art & Architecture Thesaurus, [http://www.getty.edu/research/tools/vocabularies/aat/](http://www.getty.edu/research/tools/vocabularies/aat/)
