@@ -46,6 +46,7 @@ The In Her Own Right dataset consists of all item-level records aggregated by th
 
 [header - datestamp](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#header---datestamp)
 
+*Note that for all repeatable fields, multiple entries are concatenated and separated by a pipe, “|”, and appear as “entry1|entry2”
 
 
 ## **header - identifier**
@@ -718,9 +719,3 @@ All transcripts will be full text searchable. For transcription, InHOR recommend
 **VIAF** - Virtual International Authority File, [https://viaf.org/](https://viaf.org/)
 
 **W3CDTF** - World Wide Web Consortium Date and Time Format, [https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime)
-
-
-## **Parsing/record creation in InHOR application**
-
-* How contributing institution works: code searches for the known repository names in the "rights" or "is part of" fields and parse the records based on the results. It is in either one or the other.
-* Parsing: “ | “, “|”, and “;” are all interpreted by the system to indicate multiple entries in a field, and will make the entries appear as “entry1|entry2”
