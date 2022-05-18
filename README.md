@@ -292,7 +292,7 @@ Topics
 
 * If you only have an approximate date, InHOR recommends entering the date twice: once in machine-readable standard W3CDTF format (eg “1850-1860”), and a second time in a human-readable format (eg “approximately 1855”).
 * If you do not have a date for the resource, instead of “undated,” use a very broad range in machine-readable W3CDTF, such as, “1850-1900”.
-* For uncertain dates, because “circa” is not understood by a broad user base, the term “approximately” is preferred.
+* For uncertain dates, the term “approximately” is preferred.
 
 **Examples** (using the recommended ISO 8601 (W3CDTF) format YYYY-MM-DD): 
 
@@ -535,7 +535,7 @@ Locally constructed term with more granularity
 
 **Required:** Optional
 
-**Application:** Always include unit of measure (linear feet, pages, inches, etc.). Write out all units avoiding abbreviations, except centimeters should be written as cm (without period).** **Make sure it’s understandable for users.
+**Application:** Always include unit of measure (linear feet, pages, inches, etc.). Write out all units avoiding abbreviations, except centimeters should be written as cm (without period).
 
 **Example:**
 
@@ -614,7 +614,7 @@ Locally constructed term with more granularity
 
 **Repeatable:** Yes
 
-**Required:** Optional
+**Required:** Yes
 
 **Application:** The database maps this field so that the user can click on a collection and see all the content from that collection that is included in the InHOR site. 
 
@@ -698,7 +698,6 @@ If your institution doesn’t have a specific practice and RightsStatements.org 
 
 
 ## **full text**
-[NOT A SEPARATE FIELD - MAPS TO dc:description]
 
 **Definition:** Transcription or OCR text.
 
@@ -714,9 +713,6 @@ All contributors: Object-level transcripts will be labeled on the aggregator sit
 
 All transcripts will be full text searchable. For transcription, InHOR recommends following the guidelines in [Appendix B](https://docs.google.com/document/d/1RLbwdUrgIH-3YeZwhCxYSC5c4ll8q6-0_N99VwgpjEU/edit#heading=h.ju9jbpcpit5c). 
 
-## **Removed from curated tabular dataset:**
-[dc:relation](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcrelation)
-[dc:coverage](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dccoverage)
 
 ## **Acronyms and abbreviations used in these guidelines**
 **AAT** - Art & Architecture Thesaurus, [http://www.getty.edu/research/tools/vocabularies/aat/](http://www.getty.edu/research/tools/vocabularies/aat/)
