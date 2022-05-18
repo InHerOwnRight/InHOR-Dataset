@@ -81,9 +81,8 @@ Note that for all repeatable fields, multiple entries are concatenated and separ
 
 This is the In Her Own Right identifier assigned when the record is ingested into the database. It is drawn from the "local" identifier assigned by the contributing institution and found in the dc:identifier field.
 
-It is also used in the URL for the record in the In Her Own Right database. To determine the InHOR database URL for any particular record, take the number or string that appears after "oai:pacscl:" in the "header - identifier" field and add it to the end of http://inherownright.org/records/. So, for instance, "oai:pacscl:31194" in the "header - identifier" field becomes http://inherownright.org/records/31194.
+It is also used in the URL for the record in the In Her Own Right database. To determine the InHOR database URL for any particular record, take the number or string that appears after "oai:pacscl:" in the "header - identifier" field and add it to the end of http://inherownright.org/records/. So, for instance, "oai:pacscl:31194" in the "header - identifier" field becomes http://inherownright.org/records/31194.  
 
-<p>&nbsp;</p>
 
 ## **dc:identifier**
 
@@ -119,7 +118,7 @@ It is also used in the URL for the record in the In Her Own Right database. To d
    <td>&lt;identifier>
    </td>
   </tr>
-</table>
+</table>  
 
 
 ## **Local Identifier** *
