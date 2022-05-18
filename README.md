@@ -121,6 +121,13 @@ It is also used in the URL for the record in the In Her Own Right database. To d
 </table>
 
 
+## **Local Identifier** *
+
+
+## **Contributing Institution** *
+
+
+## **Record URL** *
 
 
 
@@ -697,7 +704,9 @@ If your institution doesn’t have a specific practice and RightsStatements.org 
 
 
 ## **header - datestamp**
+*Not Dublin Core-compliant*
 
+This datestamp indicates when the record was first ingested into the In Her Own Right database. Note that subsequent re-harvests and overwrites are not reflected in the datestamp, so it does not provide an accurate snapshot of when the record was last altered or updated.
 
 
 ## **full text**
