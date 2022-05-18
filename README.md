@@ -124,7 +124,7 @@ It is also used in the URL for the record in the In Her Own Right database. To d
 ## **Local Identifier** *
 *Not Dublin Core-compliant*
 
-While the "dc:identifier" field was originally conceived as a non-repeatable field that would contain only the contributing institution's unique local identifier for the record, in practice it expanded to hold the multiple indentifiers present in these records, including permanent URLs for the record in the home repository. It therefore concatenates several different kinds of identifiers separated by pipes ("|"). For clarity and ease of use, a dedicated "Local Identifier" field was added to the "curated" CSV and the actual local identifiers were extracted from the main "dc:identifier" field.
+While the "dc:identifier" field was originally conceived as a non-repeatable field that would contain only the contributing institution's unique local identifier for the record, in practice it expanded to hold the multiple indentifiers present in these records. It therefore concatenates several different kinds of identifiers separated by pipes ("|"). For clarity and ease of use, a dedicated "Local Identifier" field was added to the "curated" CSV and the local identifiers were extracted from the main "dc:identifier" field.
 
 ## **Contributing Institution** *
 *Not Dublin Core-compliant*
