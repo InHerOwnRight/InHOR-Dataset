@@ -17,8 +17,8 @@ It also includes a "curated" version of the dataset in CSV format that has been 
 
 * The dc:identifier field was sorted, cleaned, and split into two distinct fields: a "Local Identifier" field and a "Record URL" field. The dc:identifier field was then deleted.
 * A "Contributing Institution" field was added, because in the InHOR database this information is assigned during the ingest process and is not located in the record itself.
-* The "dc:relation" field was merged into the "dcterms:IsPartOf" field and then deleted. The two fields are redundant because the schema differs slightly depending on ingest method: the term dc:relation appears in records harvested via OAI, and "IsPartOf" is used in records harvested manually via CSV.
-* The "dc:coverage" field was merged into the "dcterms:spatial" field and then deleted. The two fields are semi-redundant because, in general, the term "dc:coverage" appears in records harvested via OAI and "spatial" is used in records harvested manually via CSV.
+* The "dc:relation" field was merged into the "dcterms:IsPartOf" field and then deleted. The "dc:relation" field appears in records harvested via OAI, but is redundant because it maps to the "IsPartOf" field that appears in the metadata guidelines.
+* The "dc:coverage" field was merged into the "dcterms:spatial" field and then deleted. The "dc:coverage" field appears in records harvested via OAI, but is redundant because it maps to the "spatial" field that appears in the metadata guidelines.
 * Fields were re-ordered for clarity and ease of use.
 
 
@@ -26,7 +26,7 @@ It also includes a "curated" version of the dataset in CSV format that has been 
 
 Below is a guide to each field in In Her Own Right metadata records. It follows the order of the fields in the "curated" CSV for clarity and ease of use.
 
-For fields that appear in the project [metadata guidelines](https://docs.google.com/document/d/1RLbwdUrgIH-3YeZwhCxYSC5c4ll8q6-0_N99VwgpjEU/edit?usp=sharing) for contributing institutions, the explanation below is drawn from those guidelines. Fields marked with * were added or altered in the "curated" CSV. Fields marked with ** were removed from the "curated" CSV but appear in the original XML. 
+For fields that appear in the project [metadata guidelines](https://docs.google.com/document/d/1RLbwdUrgIH-3YeZwhCxYSC5c4ll8q6-0_N99VwgpjEU/edit?usp=sharing) for contributing institutions, the explanation below is drawn from those guidelines. Fields marked with * were added to the "curated" CSV. Fields marked with ** were removed from the "curated" CSV but appear in the original XML. 
 
 Note that for all repeatable fields, multiple entries are concatenated and separated by a pipe, “|”, and appear as “entry1|entry2”
 
@@ -59,7 +59,7 @@ Note that for all repeatable fields, multiple entries are concatenated and separ
 
 [dc:description](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcdescription)
 
-[dcterms:spatial*](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctermsspatial)
+[dcterms:spatial](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctermsspatial)
 
 [dcterms:extent](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctermsextent)
 
@@ -67,7 +67,7 @@ Note that for all repeatable fields, multiple entries are concatenated and separ
 
 [dc:publisher](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcpublisher)
 
-[dcterms:isPartOf*](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctermsispartof)
+[dcterms:isPartOf](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctermsispartof)
 
 [dc:rights](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcrights)
 
