@@ -11,7 +11,7 @@ Records are Dublin Core-compliant and adhere to the In Her Own Right [metadata g
 
 ## About the dataset
 
-This repository includes the "full" dataset in XML format as returned from the project's API endpoint. 
+This repository includes the "full" dataset in XML format as returned from the project's API endpoint, and in tabular format as a CSV. 
 
 It also includes a "curated" version of the dataset in CSV format that has been lightly re-organized and edited for ease of use. Alterations include re-ordering some fields, combining redundant or overlapping fields, and adding certain fields:
 
@@ -28,7 +28,7 @@ Below is a guide to each field in In Her Own Right metadata records. It follows 
 
 For fields that appear in the project [metadata guidelines](https://docs.google.com/document/d/1RLbwdUrgIH-3YeZwhCxYSC5c4ll8q6-0_N99VwgpjEU/edit?usp=sharing), the explanation below is drawn from those guidelines. Fields marked with * were added to the "curated" CSV. Fields marked with ** were removed from the "curated" CSV but appear in the original XML. 
 
-Note that for all repeatable fields, multiple entries are concatenated and separated by a pipe, “|”, and appear as “entry1|entry2”
+Note that for all repeatable fields, multiple entries are concatenated and separated by a pipe, “|”, and appear as “entry1|entry2.”
 
 
 ### Table of Contents
