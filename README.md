@@ -582,6 +582,14 @@ Locally constructed term with more granularity
 
 ## **dc:contributor**
 
+**Definition:** An entity responsible for making contributions to the resource.
+
+**Repeatable:** Yes
+
+**Required:** No
+
+**Application:** The guidelines for using names of persons or organizations as creators apply to contributors.
+
 
 ## **dc:publisher**
 
