@@ -83,6 +83,7 @@ This is the In Her Own Right identifier assigned when the record is ingested int
 
 It is also used in the URL for the record in the In Her Own Right database. To determine the InHOR database URL for any particular record, take the number or string that appears after "oai:pacscl:" in the "header - identifier" field and add it to the end of http://inherownright.org/records/. So, for instance, "oai:pacscl:31194" in the "header - identifier" field becomes http://inherownright.org/records/31194.
 
+<p>&nbsp;</p>
 
 ## **dc:identifier**
 
