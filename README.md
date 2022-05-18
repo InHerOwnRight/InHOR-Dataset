@@ -26,7 +26,7 @@ It also includes a "curated" version of the dataset in CSV format that has been 
 
 Below is a guide to each field in In Her Own Right metadata records. It follows the order of the fields in the "curated" CSV for clarity and ease of use.
 
-Fields marked with * were added or altered in the "curated" CSV. Fields marked with ** were removed from the "curated" CSV but appear in the original XML. 
+For fields that appear in the project [metadata guidelines](https://docs.google.com/document/d/1RLbwdUrgIH-3YeZwhCxYSC5c4ll8q6-0_N99VwgpjEU/edit?usp=sharing) for contributing institutions, the explanation below is drawn from those guidelines. Fields marked with * were added or altered in the "curated" CSV. Fields marked with ** were removed from the "curated" CSV but appear in the original XML. 
 
 Note that for all repeatable fields, multiple entries are concatenated and separated by a pipe, “|”, and appear as “entry1|entry2”
 
@@ -124,13 +124,17 @@ It is also used in the URL for the record in the In Her Own Right database. To d
 ## **Local Identifier** *
 *Not Dublin Core-compliant*
 
+While the "dc:identifier" field was originally conceived as a non-repeatable field that would contain only the contributing institution's unique local identifier for the record, in practice it expanded to hold the multiple indentifiers present in these records, including permanent URLs for the record in the home repository. It therefore concatenates several different kinds of identifiers separated by pipes ("|"). For clarity and ease of use, a dedicated "Local Identifier" field was added to the "curated" CSV and the actual local identifiers were extracted from the main "dc:identifier" field.
 
 ## **Contributing Institution** *
 *Not Dublin Core-compliant*
 
+The institution contributing the record to In Her Own Right. While this field displays on the front end of each record in the InHOR search interface, it is assigned during the ingest process and is not stored in the metadata record itself. It has been added to the "curated" CSV for ease of use.
+
 ## **Record URL** *
 *Not Dublin Core-compliant*
 
+While the "dc:identifier" field was originally conceived as a non-repeatable field that would contain only the contributing institution's unique local identifier for the record, in practice it expanded to hold the multiple indentifiers present in these records, including permanent URLs for the record in the home repository. It therefore concatenates several different kinds of identifiers separated by pipes ("|"). For clarity and ease of use, a dedicated "Record URL" field was added to the "curated" CSV and the record URLs were extracted from the main "dc:identifier" field.
 
 ## **dc:title**
 
