@@ -39,11 +39,11 @@ Note that for all repeatable fields, multiple entries are concatenated and separ
 
 [dc:identifier**](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcidentifier)
 
-[Local Identifier*]
+[Local Identifier*](https://github.com/InHerOwnRight/InHOR-Dataset/blob/main/README.md#local-identifier-)
 
-[Contributing Institution*]
+[Contributing Institution*](https://github.com/InHerOwnRight/InHOR-Dataset/blob/main/README.md#contributing-institution-)
 
-[Record URL*]
+[Record URL*](https://github.com/InHerOwnRight/InHOR-Dataset/blob/main/README.md#record-url-)
 
 [dc:title](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dctitle)
 
@@ -73,7 +73,7 @@ Note that for all repeatable fields, multiple entries are concatenated and separ
 
 [header - datestamp](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#header---datestamp)
 
-
+[full text](https://github.com/InHerOwnRight/InHOR-Dataset/blob/main/README.md#full-text)
 
 
 ## **header - identifier**
@@ -122,13 +122,14 @@ It is also used in the URL for the record in the In Her Own Right database. To d
 
 
 ## **Local Identifier** *
+*Not Dublin Core-compliant*
 
 
 ## **Contributing Institution** *
-
+*Not Dublin Core-compliant*
 
 ## **Record URL** *
-
+*Not Dublin Core-compliant*
 
 
 ## **dc:title**
@@ -710,6 +711,7 @@ This datestamp indicates when the record was first ingested into the In Her Own 
 
 
 ## **full text**
+*Not Dublin Core-compliant*
 
 **Definition:** Transcription or OCR text.
 
