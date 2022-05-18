@@ -24,12 +24,20 @@ It also includes a "curated" version of the dataset in CSV format that has been 
 
 ## Metadata schema
 
+Below is a guide to each field in In Her Own Right metadata records. It follows the order of the fields in the "curated" CSV for clarity and ease of use.
+
+Fields marked with * were added or altered in the "curated" CSV. Fields marked with ** were removed from the "curated" CSV but appear in the original XML. 
+
+Note that for all repeatable fields, multiple entries are concatenated and separated by a pipe, “|”, and appear as “entry1|entry2”
+
 
 ### Table of Contents
 
+
+
 [header - identifier](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#header---identifier)
 
-[dc:identifier](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcidentifier)
+[dc:identifier**](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#dcidentifier)
 
 [Local Identifier*]
 
@@ -65,7 +73,7 @@ It also includes a "curated" version of the dataset in CSV format that has been 
 
 [header - datestamp](https://github.com/InHerOwnRight/InHOR-Dataset/edit/main/README.md#header---datestamp)
 
-*Note that for all repeatable fields, multiple entries are concatenated and separated by a pipe, “|”, and appear as “entry1|entry2”
+
 
 
 ## **header - identifier**
