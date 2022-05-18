@@ -19,7 +19,7 @@ It also includes a "curated" version of the dataset in CSV format that has been 
 * A "Contributing Institution" field was added, because in the InHOR database this information is assigned during the ingest process and is not located in the record itself.
 * The "dc:relation" field was merged into the "dcterms:IsPartOf" field and then deleted. The two fields are redundant because the schema differs slightly depending on ingest method: the term dc:relation appears in records harvested via oai, and "IsPartOf" is used in records harvested manually via csv.
 * The "dc:coverage" field was merged into the "dcterms:spatial" field and then deleted. The two fields are semi-redundant because, in general, the term dc:coverage appears in records harvested via oai and "spatial" is used in records harvested manually via csv.
-* Fields were re-ordered for clarity and ease of use.The In Her Own Right dataset consists of all item-level records aggregated by the project, currently 13,295.
+* Fields were re-ordered for clarity and ease of use.
 
 
 ## Metadata schema
