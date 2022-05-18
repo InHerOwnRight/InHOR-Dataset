@@ -1,6 +1,25 @@
 # In Her Own Right Dataset
 
-The In Her Own Right dataset consists of all item-level records aggregated by the project, currently 13,295.
+## About the data
+
+The In Her Own Right dataset consists of 13,295 item-level records aggregated from over twenty different institutions in the Philadelphia area and beyond. A full list of [contributing institutions](http://inherownright.org/spotlight/about/feature/project-participants), as well as more information [about the project](http://inherownright.org/spotlight/about), can be found on the [In Her Own Right website](http://inherownright.org).
+
+Each contributing institution hosts its own records and digital objects, but the In Her Own Right project makes the metadata available in the aggregate via a [custom search interface](http://inherownright.org/catalog?utf8=✓&search_field=all_fields&q=), [API access](http://inherownright.org/spotlight/data/feature/api-access-and-data-sets), and for download in this repository and on the [project website](http://inherownright.org/spotlight/data/feature/api-access-and-data-sets). 
+
+Records are Dublin Core-compliant and adhere to the In Her Own Right [metadata guidelines](https://docs.google.com/document/d/1RLbwdUrgIH-3YeZwhCxYSC5c4ll8q6-0_N99VwgpjEU/edit?usp=sharing), which were designed for maximum flexibility and inclusivity. There is a minimum standard of metadata via required fields, but institutions were encouraged to enhance their records by adding recommended fields. Records are ingested into the In Her Own Right database via OAI-PMH harvest or, in cases where that is not possible, manual ingest via CSV. Visit the [project documentation](http://inherownright.org/spotlight/about/feature/project-documentation) page for more information. 
+
+
+## About the dataset
+
+This repository includes the "full" dataset in XML format as returned from the project's API endpoint. 
+
+It also includes a "curated" version of the dataset in CSV format that has been lightly re-organized and edited for ease of use. Alterations include re-ordering some fields, combining redundant or overlapping fields, and adding certain fields that are not present in the "raw" data because the information is stored elsewhere in the project database.
+
+* The dc:identifier field was sorted, cleaned, and split into two distinct fields: a "Local Identifier" field and a "Record URL" field. The dc:identifier field was then deleted.
+* A "Contributing Institution" field was added, because in the InHOR database this information is assigned during the ingest process and is not located in the record itself.
+* The "dc:relation" field was merged into the "dcterms:IsPartOf" field and then deleted. The two fields are redundant because the schema differs slightly depending on ingest method: the term dc:relation appears in records harvested via oai, and "IsPartOf" is used in records harvested manually via csv.
+* The "dc:coverage" field was merged into the "dcterms:spatial" field and then deleted. The two fields are semi-redundant because, in general, the term dc:coverage appears in records harvested via oai and "spatial" is used in records harvested manually via csv.
+* Fields were re-ordered for clarity and ease of use.The In Her Own Right dataset consists of all item-level records aggregated by the project, currently 13,295.
 
 
 ## Metadata schema
