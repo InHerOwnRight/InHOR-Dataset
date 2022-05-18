@@ -13,12 +13,12 @@ Records are Dublin Core-compliant and adhere to the In Her Own Right [metadata g
 
 This repository includes the "full" dataset in XML format as returned from the project's API endpoint. 
 
-It also includes a "curated" version of the dataset in CSV format that has been lightly re-organized and edited for ease of use. Alterations include re-ordering some fields, combining redundant or overlapping fields, and adding certain fields that are not present in the "raw" data because the information is stored elsewhere in the project database.
+It also includes a "curated" version of the dataset in CSV format that has been lightly re-organized and edited for ease of use. Alterations include re-ordering some fields, combining redundant or overlapping fields, and adding certain fields that are not present in the "raw" data because the information is stored elsewhere in the project database:
 
 * The dc:identifier field was sorted, cleaned, and split into two distinct fields: a "Local Identifier" field and a "Record URL" field. The dc:identifier field was then deleted.
 * A "Contributing Institution" field was added, because in the InHOR database this information is assigned during the ingest process and is not located in the record itself.
-* The "dc:relation" field was merged into the "dcterms:IsPartOf" field and then deleted. The two fields are redundant because the schema differs slightly depending on ingest method: the term dc:relation appears in records harvested via oai, and "IsPartOf" is used in records harvested manually via csv.
-* The "dc:coverage" field was merged into the "dcterms:spatial" field and then deleted. The two fields are semi-redundant because, in general, the term dc:coverage appears in records harvested via oai and "spatial" is used in records harvested manually via csv.
+* The "dc:relation" field was merged into the "dcterms:IsPartOf" field and then deleted. The two fields are redundant because the schema differs slightly depending on ingest method: the term dc:relation appears in records harvested via OAI, and "IsPartOf" is used in records harvested manually via CSV.
+* The "dc:coverage" field was merged into the "dcterms:spatial" field and then deleted. The two fields are semi-redundant because, in general, the term "dc:coverage" appears in records harvested via OAI and "spatial" is used in records harvested manually via CSV.
 * Fields were re-ordered for clarity and ease of use.
 
 
